@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap");
+.App {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    position: relative;
+}
+
+.topBox {
+    z-index: 1;
+    grid-row: 1 / 2;
+}
+
+.resultsBox {
+    z-index: 0;
+    grid-row: 2 / 3;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.search-box-appear {
+    opacity: 0;
+}
+
+.search-box-appear-active {
+    opacity: 1;
+    transition: 2s 0.3s ease-in-out;
+}

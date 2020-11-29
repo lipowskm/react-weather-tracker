@@ -1,0 +1,28 @@
+.focused-input-with-list {
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    transition: none;
+    box-shadow: none;
+}
+
+.focused-input-without-list {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    transition: 0.4s;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6), 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.blurred-input {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    transition: 0.4s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.suggestion-item--active {
+    cursor: pointer;
+    background-color: #c5c5c5;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
